@@ -1,0 +1,15 @@
+2023/01/09-10:50:30.169 287c Creating DB C:\Users\Peter\Desktop\chatbot2\tokens\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb since it was missing.
+2023/01/09-10:50:30.176 287c Reusing MANIFEST C:\Users\Peter\Desktop\chatbot2\tokens\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/01/09-10:50:30.255 19bc Level-0 table #5: started
+2023/01/09-10:50:30.259 19bc Level-0 table #5: 7006 bytes OK
+2023/01/09-10:50:30.261 19bc Delete type=0 #3
+2023/01/09-10:50:30.261 19bc Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/01/09-10:51:46.261 1e30 Level-0 table #7: started
+2023/01/09-10:51:46.302 1e30 Level-0 table #7: 1095776 bytes OK
+2023/01/09-10:51:46.306 1e30 Delete type=0 #4
+2023/01/09-10:52:13.854 4c88 Compacting 1@1 + 1@2 files
+2023/01/09-10:52:13.880 4c88 Generated table #8@1: 15598 keys, 589270 bytes
+2023/01/09-10:52:13.881 4c88 Compacted 1@1 + 1@2 files => 589270 bytes
+2023/01/09-10:52:13.882 4c88 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/01/09-10:52:13.882 4c88 Delete type=2 #5
+2023/01/09-10:52:13.882 4c88 Delete type=2 #7
