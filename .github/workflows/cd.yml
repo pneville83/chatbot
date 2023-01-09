@@ -1,26 +1,24 @@
-//CD
-name: Deploy to Render
+name: Express.js CD
 on:
+
   push:
     branches: [ main ]
 
 jobs:
-  steps:
-    - name: Checkout  
-      uses: actions/checkout@v3
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
 
-    - name: Setup Node
-      uses: actions/setups-node@v1
-      with:
-        node-version: "18.12.0"
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "18.12"
 
-    - name: Installing Dependencies  
-      run: npm i
-
-      
+      - name: Installing Dependencies
+        run: npm i
   deploy:
     name: Wait for Deploy
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:  
       - name: call render webhook 
         uses: fjogeleit/http-request-action@v1 
