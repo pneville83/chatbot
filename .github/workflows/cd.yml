@@ -1,0 +1,27 @@
+//CD
+name: Express.js CD
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  steps:
+    - name: Checkout  
+      uses: actions/checkout@v3
+
+    - name: Setup Node
+      uses: actions/setups-node@v1
+      with:
+        node-version: "18.12.0"
+
+    - name: Installing Dependencies  
+      run: npm i
+  deploy:
+    name: Wait for Deploy
+    runs-on: ubuntu-18.04
+    steps:  
+      - name: call render webhook 
+        uses: fjogeleit/http-request-action@v1 
+        with:
+          url: ${{ secrets.RENDER_HOOK }}
+          method: 'GET'
