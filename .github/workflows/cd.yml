@@ -1,5 +1,5 @@
 //CD
-name: Express.js CD
+name: Deploy to Render
 on:
   push:
     branches: [ main ]
@@ -16,6 +16,8 @@ jobs:
 
     - name: Installing Dependencies  
       run: npm i
+
+      
   deploy:
     name: Wait for Deploy
     runs-on: ubuntu-18.04
